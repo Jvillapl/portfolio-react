@@ -67,7 +67,8 @@ function Projects() {
       features: ["Artículos científicos", "Diseño limpio", "Contenido educativo"],
       liveUrl: "https://med-inter.netlify.app/",
       githubUrl: "#",
-      gradient: "bg-gradient-to-tr from-indigo-500/10 via-violet-500/10 to-slate-500/10"
+      gradient: "bg-gradient-to-tr from-indigo-500/10 via-violet-500/10 to-slate-500/10",
+      imageUrl: "/screenshots/med-interna.png"
     }
   ];
 
