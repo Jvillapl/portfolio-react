@@ -45,7 +45,7 @@ function Projects() {
       tech: "React · Tailwind · Node/Express · Google Sheets",
       description: "Plataforma de reservas con control de aforo, calendario y confirmaciones, conectada a un backend en Node/Express que usa Google Sheets como base de datos rápida.",
       features: ["Reservas y aforo", "Integración Sheets", "SPA en React"],
-      liveUrl: "https://reservas-cars.netlify.app/",
+      liveUrl: "https://lavacarr.netlify.app/",
       githubUrl: "#",
       gradient: "bg-gradient-to-tr from-emerald-500/10 via-cyan-500/10 to-slate-500/10"
     },
@@ -54,7 +54,7 @@ function Projects() {
       tech: "React · Tailwind · Publicación de artículos",
       description: "Plataforma informativa para estudiantes de Medicina Interna, donde se exponen artículos científicos y material académico organizado por temas.",
       features: ["Artículos científicos", "Diseño limpio", "Contenido educativo"],
-      liveUrl: "https://med-interna.netlify.app",
+      liveUrl: "https://med-inter.netlify.app/",
       githubUrl: "#",
       gradient: "bg-gradient-to-tr from-indigo-500/10 via-violet-500/10 to-slate-500/10"
     }
