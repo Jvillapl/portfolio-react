@@ -1,9 +1,19 @@
-function ProjectCard({ title, tech, description, features, liveUrl, githubUrl, gradient }) {
+function ProjectCard({ title, tech, description, features, liveUrl, githubUrl, gradient, imageUrl }) {
   return (
     <article className="bg-slate-900/70 border border-slate-800 rounded-2xl p-5 flex flex-col gap-4">
-      <div className={`aspect-video rounded-xl ${gradient} border border-slate-800 mb-2 flex items-center justify-center text-xs text-slate-400`}>
-        Screenshot {title} (añadir imagen real aquí)
-      </div>
+      {imageUrl ? (
+        <div className="aspect-video rounded-xl border border-slate-800 mb-2 overflow-hidden">
+          <img 
+            src={imageUrl} 
+            alt={title} 
+            className="w-full h-full object-cover"
+          />
+        </div>
+      ) : (
+        <div className={`aspect-video rounded-xl ${gradient} border border-slate-800 mb-2 flex items-center justify-center text-xs text-slate-400`}>
+          Screenshot {title} (añadir imagen real aquí)
+        </div>
+      )}
       <div className="flex-1">
         <h3 className="text-lg font-semibold mb-1">{title}</h3>
         <p className="text-xs text-emerald-300 mb-1">{tech}</p>
@@ -47,7 +57,8 @@ function Projects() {
       features: ["Reservas y aforo", "Integración Sheets", "SPA en React"],
       liveUrl: "https://lavacarr.netlify.app/",
       githubUrl: "#",
-      gradient: "bg-gradient-to-tr from-emerald-500/10 via-cyan-500/10 to-slate-500/10"
+      gradient: "bg-gradient-to-tr from-emerald-500/10 via-cyan-500/10 to-slate-500/10",
+      imageUrl: "/screenshots/lavacarr.png"
     },
     {
       title: "Sitio de Medicina Interna – UCIMED",
